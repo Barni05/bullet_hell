@@ -1,9 +1,3 @@
--equip
--drop
--throw
--fire
--altfire
-
-drop(){enable box collider, lose control, clear parent}
-throw(){drop(), enable "istrigger"}
-altfire on thrown(){drop(),disable gravity on rigidbody, disable drag, disable mass}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ceabe0f92966ca24191c7bed1ae5a0e2aa0a2bae41a355ce8001283abdea3869
+size 212

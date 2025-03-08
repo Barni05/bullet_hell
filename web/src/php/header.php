@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_URI"] == "/bullet_hell/web/src/php/header.php") {
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="index.php"><img
                             src="<?php $_SERVER['DOCUMENT_ROOT'] ?>/bullet_hell/web/src/images/logo.png" width="70"
                             height="70" alt=""></a></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body bg-custom">
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_URI"] == "/bullet_hell/web/src/php/header.php") {
                 </ul>
             </div>
         </div>
-        <a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/bullet_hell/web/profile/" class="login-button fs-5"
+        <a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/bullet_hell/web/profile/" class="credential-submit-button fs-5 pixel-font"
             id="login-username">
             <?php echo $_SESSION['username']; ?>
         </a>
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_URI"] == "/bullet_hell/web/src/php/header.php") {
                 class="fa-solid fa-right-from-bracket"></i></a>
         <button class="navbar-toggler shadow-none border-0 pe-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon navbar-toggler-icon-white"></span>
         </button>
     </div>
 </nav>

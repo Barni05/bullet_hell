@@ -1,3 +1,4 @@
+@import url("../../src/css/style.css");
 @media screen and (min-width: 992px) {
     .navbar .container-fluid,
     .navbar-expand-lg .navbar-collapse,
@@ -24,7 +25,12 @@
         flex-shrink: 1;
     }
 }
-
+.navbar{
+    background-color: var(--light-bg);
+}
+.navitem a{
+    color: var(--font-light);
+}
 .navbar hr {
     width: 90%;
     margin-left: auto;

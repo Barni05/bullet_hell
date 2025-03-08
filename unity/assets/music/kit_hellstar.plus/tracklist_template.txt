@@ -1,7 +1,3 @@
-AUTHOR: hellstar.plus
-FIGHT1:	trauma posting
-FIGHT2:	hkf
-FIGHT3:	any time
-MENU1:	heretical priestess
-MENU2:	sever
-MVP:	
+version https://git-lfs.github.com/spec/v1
+oid sha256:d96279ea2003061e3681971f76ad215cec84a523dea1bd6721921445fcb57354
+size 151

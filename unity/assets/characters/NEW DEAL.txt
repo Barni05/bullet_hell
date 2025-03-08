@@ -1,10 +1,3 @@
--char_handCloseA: gun hold
--char_handCloseB: knife hold
--char_handFarA: shotgun hold
--char_handFarB: empty hand (+30° alignment compensation)
-
-gun hold: guns pistols bows
-knife hold: melee
-
-shotgun hold: assault rifles
-empty hand: pistols, bow(on string), melee
+version https://git-lfs.github.com/spec/v1
+oid sha256:e89e0a00aa278af6b7925042350ac0dad3c866ec6ead779f48434de3b16f5739
+size 262

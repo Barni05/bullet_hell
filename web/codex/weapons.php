@@ -4,7 +4,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/bullet_hell/web/src/php/links.php");
 if (!is_logged_in()) {
     header("Location: ../login/login.php");
 }
-$weaponIndex = $_GET['weapon'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,13 +20,13 @@ $weaponIndex = $_GET['weapon'];
 
     <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/bullet_hell/web/src/php/header.php");
     ?>
-    <script src="src/weapons.js" type="module"></script>
     <div class="hero-section">
 
     </div>
     <div class="other-weapons-section">
-
     </div>
+    <script src="src/weapons.js" type="module"></script>
+
 </body>
 
 </html>

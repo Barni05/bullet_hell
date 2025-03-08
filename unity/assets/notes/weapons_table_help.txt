@@ -1,33 +1,3 @@
-HAM FACTORY
-3;scythe;		done
-1;cleaver;		done
-2;nailgun;		done
-1;knife;		done
-2;chainsaw;		done
-1;taser;		done
-
-RIOT
-3;hatespeech;		done (fx missing but yeah)
-1;knife;		done
-2;pistol;		done
-1;molotov;		done
-1;cleaver;		done
-2;sawedoff;		done
-
-EDO
-3;musket;		done (sniper fx can be used for it, make it look grand)
-2;bow;			done
-1;dagger;		done
-1;kunai;		done
-2;katana;		done
-1;kusarigama;		done
-
-WARZONE
-3;sniper;		missing
-2;ak;			missing
-1;mp40			missing
-1;pistol;		done
-2;shotgun		done
-1;machete		done
-
-practice tool has ALL the weapons ()
+version https://git-lfs.github.com/spec/v1
+oid sha256:881150cf52d40e7ff8eae950421aae443ddd4c9a2d8c51569f08f5dfbcdfefcb
+size 541

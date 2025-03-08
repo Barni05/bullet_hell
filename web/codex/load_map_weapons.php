@@ -1,4 +1,5 @@
 <?php
+//This query is not used, but it loads all the weapons associated with a map
 require_once($_SERVER['DOCUMENT_ROOT'] . "/bullet_hell/web/src/php/config.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/bullet_hell/web/src/php/utils.php");
 header('Content-Type: application/json; charset=utf-8');

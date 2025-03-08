@@ -4,7 +4,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/bullet_hell/web/src/php/links.php");
 if (!is_logged_in()) {
     header("Location: ../login/login.php");
 }
-$characterIndex = $_GET['character'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,17 +17,12 @@ $characterIndex = $_GET['character'];
 
 <body data-page="weapons">
 
-    <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/bullet_hell/web/src/php/header.php");
-    ?>
-    <script src="src/character.js" type="module"></script>
-    <!-- <div class="hero-section">
-
+    <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/bullet_hell/web/src/php/header.php");?>
+    <div class="container p-0 bg-dark">
+        <div class="character-slides-container container-fluid p-0">
+        </div>
     </div>
-    <div class="other-characters-section">
-
-    </div> -->
-    <div class="character-slides-container container-fluid p-0">
-    </div>
+    <script src="src/characters.js" type="module"></script>
 </body>
 
 </html>

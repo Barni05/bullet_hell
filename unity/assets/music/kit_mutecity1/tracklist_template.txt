@@ -1,7 +1,3 @@
-AUTHOR: Mute City
-FIGHT1:	Computer Pause Program (first half, cut it pls)
-FIGHT2:	Deep Forest
-FIGHT3:	Zero Gravity Flying Eye
-MENU1:	Grim Psychometry
-MENU2:	Compliance
-MVP:	Loser Talk
+version https://git-lfs.github.com/spec/v1
+oid sha256:a95c8a88d9755b2a973b74d738dc7cbe417297a9a299308049cf39fa5cb7831f
+size 203

@@ -1,7 +1,3 @@
-AUTHOR: hellstar.plus
-FIGHT1:	any time
-FIGHT2:	hkf
-FIGHT3:	
-MENU1:	heretical priestess
-MENU2:	
-MVP:	
+version https://git-lfs.github.com/spec/v1
+oid sha256:14fe3a5a2ab6a64e1584b7f92b0ac60c5d24bc1fb0c59da654e13bffe5d9bbe9
+size 63

@@ -1,3 +1,37 @@
+:root{
+    --light-bg: #53575c;
+    --dark-bg: #343a40;
+    --darker-bg:#282c2f;
+    --header-bg: #171b2e;
+    --font-light: rgb(212, 205, 205);
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background-color: var(--dark-bg);
+    color: var(--font-light);
+}
+table tr:nth-child(2n+1){
+    background-color: var(--dark-bg) !important;
+}
+table tr:nth-child(2n){
+    background-color: var(--darker-bg) !important;
+}
+tr td {
+    background-color: inherit !important;
+}
+
+* {
+    border-radius: 0 !important;
+}
+
+input, select, input::placeholder, textarea {
+    background-color: var(--darker-bg) !important;
+    color: var(--font-light) !important;
+    border-color: var(--light-bg) !important;
+}
+
 .pw_visibility {
     background: url("src/pw/1.png");
     height: 70px;
@@ -13,11 +47,25 @@
     src: url('../fonts/pixelmix/pixelmix_bold.ttf');
 }
 
-.bg-custom {
-    background-color: rgb(30,30,40);
+.offcanvas-header{
+    background-color: var(--header-bg);
+}
+@media (max-width: 600px){
+    .offcanvas-body{
+        background-color: var(--dark-bg)!important;
+    }
+}
+.navbar-toggler-icon-white {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.login-button {
+.bg-custom {
+    background-color: var(--header-bg);
+}
+.pixel-font{
+    font-family: 'Pixelmix', sans-serif;
+}
+.credential-submit-button {
     padding: 8px 20px;
     color: #fff;
     transition: 0.3s;
@@ -27,9 +75,9 @@
     letter-spacing: 5px;
 }
 
-.login-button:hover {
-    color: black;
-    text-decoration: inherit;
+.credential-submit-button:hover {
+    text-decoration: none;
+    color: white;
 }
 
 .menu-element {
@@ -71,31 +119,22 @@
     -ms-interpolation-mode: nearest-neighbor; /* IE8+                           */
 }
 
-@media (max-width: 400px) {
-    .profile-container {
-        display: block;
+
+/*Main page design*/
+.fade-in{
+    animation: fadeIn 2s forwards;
+    opacity: 0;
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
     }
 }
-@media (min-width: 400px) {
-    .profile-container {
-        display: flex;
-    }
-}
 
-.profile-image {
-    width: auto;
-    height: 250px;
+.hero-content{
+    background-color: var(--darker-bg);
+    box-shadow: inset 0px 0px 3px 3px #e7e6e4;
 }
-
-.stat-card {
-    transition: 0.2s;
-}
-
-.stat-card:hover {
-    background-color: #eee;
-}
-
-.change-pw {
-    max-width: 500px;
-    text-align: center;
+.yt-video{
+    margin-bottom: 200px;
 }

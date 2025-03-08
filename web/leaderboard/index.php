@@ -1,5 +1,6 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'] . "/bullet_hell/web/src/php/utils.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/bullet_hell/web/src/php/config.php");
 if (!is_logged_in()) {
     header("Location: ../login/login.php");
 }
@@ -12,28 +13,48 @@ if (!is_logged_in()) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bullet Hell - Leaderboard</title>
     <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/bullet_hell/web/src/php/links.php"); ?>
+    <link rel="stylesheet" href="leaderboard.css">
 </head>
 
 <body>
     <?php include($_SERVER['DOCUMENT_ROOT'] . "/bullet_hell/web/src/php/header.php"); ?>
 
-    <table class="table table-dark table-striped">
-        <thead class="thead-dark">
-            <tr>
-                <th scope="col">Username</th>
-                <th scope="col">Points</th>
-                <th scope="col">Winrate</th>
-                <th scope="col">Games Played</th>
-                <th scope="col">Kills</th>
-                <th scope="col">Deaths</th>
+    <div class="container">
+        <h1 class="pixel-font text-center my-3 py-2 bg-dark border border-secondary text-light">LEADERBOARD</h1>
+        <label for="page_size">Number of players per page:</label>
+        <select name="page_size" id="page_size">
+            <?php
+                foreach($GLOBALS["page_sizes"] as $size) {
+                    echo "<option value=\"$size\"";
+                    if($size == $_SESSION["players_per_page"]) {
+                        echo " selected";
+                    }
+                    echo ">$size</option>";
+                }
+            ?>
+        </select>
+        <table class="table table-dark my-2">
+            <thead class="thead">
+                <tr>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Username</th>
+                    <th scope="col"></th>
+                    <th scope="col">Points</th>
+                    <th scope="col">Winrate</th>
+                    <th scope="col">Games Played</th>
+                    <th scope="col">Kills</th>
+                    <th scope="col">Deaths</th>
+                </tr>
+            </thead>
+            <tbody class="table-contents">
+            </tbody>
+        </table>
+        <div class="bg-dark text-center rounded" id="page-controls">
+        </div>
+    </div>
 
-            </tr>
-        </thead>
-        <tbody class="table-contents">
-        </tbody>
-    </table>
-
-    <script src="src/leaderboard.js"></script>
+    <script src="../src/js/url_utils.js"></script>
+    <script src="leaderboard.js"></script>
 </body>
 
 </html>

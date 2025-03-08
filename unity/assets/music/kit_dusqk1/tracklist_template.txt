@@ -1,7 +1,3 @@
-AUTHOR: dusqk
-FIGHT1:	lands of gaia
-FIGHT2:	hearts key.mem
-FIGHT3:	angel-eisheth_evoke
-MENU1:	angel memory
-MENU2:	heart breaks 2005 (saved ver)
-MVP:	under_lust
+version https://git-lfs.github.com/spec/v1
+oid sha256:80c9b40252a869195a8bcc63b1aeba395d6468aff2afed77a219758eba892be9
+size 165
